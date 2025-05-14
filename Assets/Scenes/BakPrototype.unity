@@ -521,7 +521,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133819293}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.043619405, w: 0.9990483}
   m_LocalPosition: {x: 1.6126081, y: 1.6825055, z: -2.584201}
   m_LocalScale: {x: 5, y: 1, z: 5}
   m_ConstrainProportionsScale: 0
@@ -531,8 +531,9 @@ Transform:
   - {fileID: 1945522356}
   - {fileID: 1689505819}
   - {fileID: 827376821}
+  - {fileID: 1792524734}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5}
 --- !u!114 &1133819298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,7 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44cd14383d0957f47835a961543052d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationSpeed: 1
+  RotationSpeed: 0.000001
   xRotation: 0
   yRotation: 0
   zRotation: 0
@@ -1893,6 +1894,7 @@ GameObject:
   - component: {fileID: 1792524733}
   - component: {fileID: 1792524732}
   - component: {fileID: 1792524731}
+  - component: {fileID: 1792524735}
   m_Layer: 0
   m_Name: GoalPoint
   m_TagString: Untagged
@@ -1984,13 +1986,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1792524730}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 3.5, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.8774784, y: 1.8174945, z: 1.1328402}
+  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1133819297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1792524735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792524730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aea3064ca2da9a459f87e615557e453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finishZone: {fileID: 1792524731}
+  player: {fileID: 477516120}
 --- !u!1 &1801100569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,5 +2696,4 @@ SceneRoots:
   - {fileID: 1755393755}
   - {fileID: 477516124}
   - {fileID: 1146794750}
-  - {fileID: 1792524734}
   - {fileID: 795649983}
